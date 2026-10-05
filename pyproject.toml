@@ -1,0 +1,22 @@
+[project]
+name = "freight-rate-prediction"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "lightgbm>=4.7.0",
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<3",
+    "pandas>=2.0,<3",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "markdown>=3.11",
+]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["score.py"]
